@@ -290,7 +290,6 @@
                                     </div>
                                 </div>
                                 <!-- End Single Demo  -->
-
                                 <!-- Start Single Demo  -->
                                 <div class="col-lg-12 col-xl-2 col-xxl-2 col-md-12 col-sm-12 col-12 single-mega-item coming-soon">
                                     <div class="demo-single">
@@ -305,7 +304,6 @@
                                     </div>
                                 </div>
                                 <!-- End Single Demo  -->
-
                                 <!-- Start Single Demo  -->
                                 <div class="col-lg-12 col-xl-2 col-xxl-2 col-md-12 col-sm-12 col-12 single-mega-item coming-soon">
                                     <div class="demo-single">
@@ -325,13 +323,13 @@
                             <div class="load-demo-btn text-center">
                                 <a class="rbt-btn-link color-white" href="#">Scroll to view more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z" />
-                                    </svg></a>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <!-- End Mega Menu  -->
                 </li>
-
                 <li class="with-megamenu has-menu-child-item">
                     <a href="#">Courses <i class="feather-chevron-down"></i></a>
                     <!-- Start Mega Menu  -->
@@ -441,7 +439,6 @@
                                         <li><a href="admission-guide.html">Admission Guide</a></li>
                                     </ul>
                                 </div>
-
                                 <div class="col-lg-12 col-xl-3 col-xxl-3 single-mega-item">
                                     <h3 class="rbt-short-title">Get Started</h3>
                                     <ul class="mega-menu-item">
@@ -529,7 +526,6 @@
                                             </div>
                                         </div>
                                         <!-- End Single Category  -->
-
                                     </div>
                                 </div>
                             </div>
@@ -556,7 +552,6 @@
                                         <li><a href="call-to-action.html">Call To Action</a></li>
                                     </ul>
                                 </div>
-
                                 <div class="col-lg-4 col-xxl-4 single-mega-item">
                                     <ul class="mega-menu-item">
                                         <li><a href="counterup.html">Counter</a></li>
@@ -569,7 +564,6 @@
                                         <li><a href="gallery.html">Gallery</a></li>
                                     </ul>
                                 </div>
-
                                 <div class="col-lg-4 col-xxl-4 single-mega-item">
                                     <ul class="mega-menu-item">
                                         <li><a href="pricing.html">Pricing</a></li>
@@ -580,7 +574,6 @@
                                         <li><a href="search.html">Search Style</a></li>
                                         <li><a href="instagram.html">Instagram Style</a></li>
                                         <li><a href="#">& More Coming</a></li>
-
                                     </ul>
                                 </div>
 
@@ -589,11 +582,10 @@
                                 <div class="col-lg-12">
                                     <div class="btn-wrapper">
                                         <a class="rbt-btn btn-gradient hover-icon-reverse square btn-xl w-100 text-center mt--30 hover-transform-none" href="#">
-                                                <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Visit Histudy Template</span>
-                                                <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                                <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                                </span>
+                                            <span class="icon-reverse-wrapper"><span class="btn-text">Visit Histudy Template</span>
+                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
@@ -621,7 +613,6 @@
                                         <li><a href="post-format-gallery.html">Post Format Gallery</a></li>
                                     </ul>
                                 </div>
-
                                 <div class="col-lg-12 col-xl-4 col-xxl-4 single-mega-item">
                                     <h3 class="rbt-short-title">Get Started</h3>
                                     <ul class="mega-menu-item">
@@ -634,10 +625,9 @@
                                         <li><a href="#">Meta Overlaid <span class="rbt-badge-card">Coming</span></a></li>
                                     </ul>
                                 </div>
-
                                 <div class="col-lg-12 col-xl-4 col-xxl-4 single-mega-item">
                                     <div class="rbt-ads-wrapper">
-                                        <a class="d-block" href="#"><img src="assets/images/service/mobile-cat.jpg" alt="Education Images"></a>
+                                        <a class="d-block" href="#"><img src="{{asset('/frontend/')}}/assets/images/service/mobile-cat.jpg" alt="Education Images"></a>
                                     </div>
                                 </div>
                             </div>
@@ -647,14 +637,12 @@
                 </li>
             </ul>
         </nav>
-
         <div class="mobile-menu-bottom">
             <div class="rbt-btn-wrapper mb--20">
                 <a class="rbt-btn btn-border-gradient radius-round btn-sm hover-transform-none w-100 justify-content-center text-center" href="#">
                     <span>Enroll Now</span>
                 </a>
             </div>
-
             <div class="social-share-wrapper">
                 <span class="rbt-short-title d-block">Find With Us</span>
                 <ul class="social-icon social-default transparent-with-border justify-content-start mt--20">
@@ -677,7 +665,6 @@
                 </ul>
             </div>
         </div>
-
     </div>
 </div>
 <!-- Start Side Vav -->
@@ -698,7 +685,7 @@
                 <li class="minicart-item">
                     <div class="thumbnail">
                         <a href="#">
-                            <img src="assets/images/product/1.jpg" alt="Product Images">
+                            <img src="{{asset('/frontend/')}}/assets/images/product/1.jpg" alt="Product Images">
                         </a>
                     </div>
                     <div class="product-content">
@@ -714,7 +701,7 @@
                 <li class="minicart-item">
                     <div class="thumbnail">
                         <a href="#">
-                            <img src="assets/images/product/7.jpg" alt="Product Images">
+                            <img src="{{asset('/frontend/')}}/assets/images/product/7.jpg" alt="Product Images">
                         </a>
                     </div>
                     <div class="product-content">
@@ -726,11 +713,10 @@
                         <button class="rbt-round-btn"><i class="feather-x"></i></button>
                     </div>
                 </li>
-
                 <li class="minicart-item">
                     <div class="thumbnail">
                         <a href="#">
-                            <img src="assets/images/product/3.jpg" alt="Product Images">
+                            <img src="{{asset('/frontend/')}}/assets/images/product/3.jpg" alt="Product Images">
                         </a>
                     </div>
                     <div class="product-content">
@@ -742,16 +728,14 @@
                         <button class="rbt-round-btn"><i class="feather-x"></i></button>
                     </div>
                 </li>
-
                 <li class="minicart-item">
                     <div class="thumbnail">
                         <a href="#">
-                            <img src="assets/images/product/4.jpg" alt="Product Images">
+                            <img src="{{asset('/frontend/')}}/assets/images/product/4.jpg" alt="Product Images">
                         </a>
                     </div>
                     <div class="product-content">
                         <h6 class="title"><a href="single-product.html">Momentum Theorem</a></h6>
-
                         <span class="quantity">1 * <span class="price">$50</span></span>
                     </div>
                     <div class="close-btn">
@@ -760,7 +744,6 @@
                 </li>
             </ul>
         </nav>
-
         <div class="rbt-minicart-footer">
             <hr class="mb--0">
             <div class="rbt-cart-subttotal">
@@ -783,7 +766,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 <!-- End Side Vav -->
@@ -818,9 +800,7 @@
         </div>
     </div>
     <!-- End Copyright Area  -->
-
 </main>
-
 <!-- End Page Wrapper Area -->
 <div class="rbt-progress-parent">
     <svg class="rbt-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">

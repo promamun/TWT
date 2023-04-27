@@ -30,4 +30,26 @@ class FrontendController extends Controller
     public function courseDetails(){
         return view('frontend.course.courseDetails');
     }
+    public function userProfile(){
+        return view('frontend.user.profile');
+    }
+    public function userDashboard(){
+        return view('frontend.user.userDashboard');
+    }
+    public function enrolledCourses(){
+        return view('frontend.user.enrolledCourses');
+    }
+    public function wishlist(){
+        return view('frontend.user.Wishlist');
+    }
+    public function reviews(){
+        return view('frontend.user.Reviews');
+    }
+    public function orderHistory(){
+        return view('frontend.user.Order-History');
+    }
+    public function settings(){
+        return view('frontend.user.Settings');
+    }
+
 }

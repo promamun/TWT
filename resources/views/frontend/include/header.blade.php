@@ -148,42 +148,36 @@
                                         </div>
                                         <div class="admin-info">
                                             <span class="name">Nipa Bali</span>
-                                            <a class="rbt-btn-link color-primary" href="#">View Profile</a>
+                                            <a class="rbt-btn-link color-primary" href="{{url('/profile')}}">View Profile</a>
                                         </div>
                                     </div>
                                     <ul class="user-list-wrapper">
                                         <li>
-                                            <a href="instructor-dashboard.html">
+                                            <a href="{{url('/dashboard')}}">
                                                 <i class="feather-home"></i>
                                                 <span>My Dashboard</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                <i class="feather-bookmark"></i>
-                                                <span>Bookmark</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="instructor-enrolled-courses.html">
+                                            <a href="{{url('/enrolled-courses')}}">
                                                 <i class="feather-shopping-bag"></i>
                                                 <span>Enrolled Courses</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="instructor-wishlist.html">
+                                            <a href="{{url('/wishlist')}}">
                                                 <i class="feather-heart"></i>
                                                 <span>Wishlist</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="instructor-reviews.html">
+                                            <a href="{{url('/reviews')}}">
                                                 <i class="feather-star"></i>
                                                 <span>Reviews</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="instructor-order-history.html">
+                                            <a href="{{url('/order-history')}}">
                                                 <i class="feather-clock"></i>
                                                 <span>Order History</span>
                                             </a>
@@ -192,22 +186,13 @@
                                     <hr class="mt--10 mb--10">
                                     <ul class="user-list-wrapper">
                                         <li>
-                                            <a href="#">
-                                                <i class="feather-book-open"></i>
-                                                <span>Getting Started</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <hr class="mt--10 mb--10">
-                                    <ul class="user-list-wrapper">
-                                        <li>
-                                            <a href="instructor-settings.html">
+                                            <a href="{{url('/settings')}}">
                                                 <i class="feather-settings"></i>
                                                 <span>Settings</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.html">
+                                            <a href="{{url('/logout')}}">
                                                 <i class="feather-log-out"></i>
                                                 <span>Logout</span>
                                             </a>
@@ -226,42 +211,36 @@
                                         </div>
                                         <div class="admin-info">
                                             <span class="name">Nipa Bali</span>
-                                            <a class="rbt-btn-link color-primary" href="profile.html">View Profile</a>
+                                            <a class="rbt-btn-link color-primary" href="{{url('/profile')}}">View Profile</a>
                                         </div>
                                     </div>
                                     <ul class="user-list-wrapper">
                                         <li>
-                                            <a href="instructor-dashboard.html">
+                                            <a href="{{url('/profile')}}">
                                                 <i class="feather-home"></i>
                                                 <span>My Dashboard</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                <i class="feather-bookmark"></i>
-                                                <span>Bookmark</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="instructor-enrolled-courses.html">
+                                            <a href="{{url('/enrolled-courses')}}">
                                                 <i class="feather-shopping-bag"></i>
                                                 <span>Enrolled Courses</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="instructor-wishlist.html">
+                                            <a href="{{url('/wishlist')}}">
                                                 <i class="feather-heart"></i>
                                                 <span>Wishlist</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="instructor-reviews.html">
+                                            <a href="{{url('/reviews')}}">
                                                 <i class="feather-star"></i>
                                                 <span>Reviews</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="instructor-order-history.html">
+                                            <a href="{{url('/order-history')}}">
                                                 <i class="feather-clock"></i>
                                                 <span>Order History</span>
                                             </a>
@@ -271,13 +250,13 @@
                                     <hr class="mt--10 mb--10">
                                     <ul class="user-list-wrapper">
                                         <li>
-                                            <a href="instructor-settings.html">
+                                            <a href="{{url('/settings')}}">
                                                 <i class="feather-settings"></i>
                                                 <span>Settings</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.html">
+                                            <a href="{{url('/logout')}}">
                                                 <i class="feather-log-out"></i>
                                                 <span>Logout</span>
                                             </a>
@@ -334,12 +313,12 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="rbt-card variation-01 rbt-hover">
                             <div class="rbt-card-img">
-                                <a href="course-details.html">
-                                    <img src="assets/images/course/course-online-01.jpg" alt="Card image">
+                                <a href="{{url('/course-details')}}">
+                                    <img src="{{asset('/frontend/')}}/assets/images/course/course-online-01.jpg" alt="Card image">
                                 </a>
                             </div>
                             <div class="rbt-card-body">
-                                <h5 class="rbt-card-title"><a href="course-details.html">React Js</a>
+                                <h5 class="rbt-card-title"><a href="{{url('/course-details')}}">React Js</a>
                                 </h5>
                                 <div class="rbt-review">
                                     <div class="rating">
@@ -366,12 +345,12 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="rbt-card variation-01 rbt-hover">
                             <div class="rbt-card-img">
-                                <a href="course-details.html">
-                                    <img src="assets/images/course/course-online-02.jpg" alt="Card image">
+                                <a href="{{url('/course-details')}}">
+                                    <img src="{{asset('/frontend/')}}/assets/images/course/course-online-02.jpg" alt="Card image">
                                 </a>
                             </div>
                             <div class="rbt-card-body">
-                                <h5 class="rbt-card-title"><a href="course-details.html">Java Program</a>
+                                <h5 class="rbt-card-title"><a href="{{url('/course-details')}}">Java Program</a>
                                 </h5>
                                 <div class="rbt-review">
                                     <div class="rating">
@@ -398,12 +377,12 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="rbt-card variation-01 rbt-hover">
                             <div class="rbt-card-img">
-                                <a href="course-details.html">
-                                    <img src="assets/images/course/course-online-03.jpg" alt="Card image">
+                                <a href="{{url('/course-details')}}">
+                                    <img src="{{asset('/frontend/')}}/assets/images/course/course-online-03.jpg" alt="Card image">
                                 </a>
                             </div>
                             <div class="rbt-card-body">
-                                <h5 class="rbt-card-title"><a href="course-details.html">Web Design</a>
+                                <h5 class="rbt-card-title"><a href="{{url('/course-details')}}">Web Design</a>
                                 </h5>
                                 <div class="rbt-review">
                                     <div class="rating">
@@ -430,12 +409,12 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="rbt-card variation-01 rbt-hover">
                             <div class="rbt-card-img">
-                                <a href="course-details.html">
-                                    <img src="assets/images/course/course-online-04.jpg" alt="Card image">
+                                <a href="{{url('/course-details')}}">
+                                    <img src="{{asset('/frontend/')}}/assets/images/course/course-online-04.jpg" alt="Card image">
                                 </a>
                             </div>
                             <div class="rbt-card-body">
-                                <h5 class="rbt-card-title"><a href="course-details.html">Web Design</a>
+                                <h5 class="rbt-card-title"><a href="{{url('/course-details')}}">Web Design</a>
                                 </h5>
                                 <div class="rbt-review">
                                     <div class="rating">

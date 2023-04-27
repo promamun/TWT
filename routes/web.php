@@ -28,3 +28,11 @@ Route::get('/privacy-policy', [App\Http\Controllers\Frontend\FrontendController:
 Route::get('/terms-of-condition', [App\Http\Controllers\Frontend\FrontendController::class, 'termsOfCondition']);
 Route::get('/all-courses', [App\Http\Controllers\Frontend\FrontendController::class, 'allCourses']);
 Route::get('/course-details', [App\Http\Controllers\Frontend\FrontendController::class, 'courseDetails']);
+///user mange route
+Route::get('/dashboard', [App\Http\Controllers\Frontend\FrontendController::class, 'userDashboard']);
+Route::get('/profile', [App\Http\Controllers\Frontend\FrontendController::class, 'userProfile']);
+Route::get('/enrolled-courses', [App\Http\Controllers\Frontend\FrontendController::class, 'enrolledCourses']);
+Route::get('/wishlist', [App\Http\Controllers\Frontend\FrontendController::class, 'wishlist']);
+Route::get('/reviews', [App\Http\Controllers\Frontend\FrontendController::class, 'reviews']);
+Route::get('/order-history', [App\Http\Controllers\Frontend\FrontendController::class, 'orderHistory']);
+Route::get('/settings', [App\Http\Controllers\Frontend\FrontendController::class, 'settings']);
