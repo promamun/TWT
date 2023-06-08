@@ -91,7 +91,7 @@
                                 <a href="{{url('/about-janine')}}">About Janine</a>
                             </li>
                             <li class="with-megamenu has-menu-child-item">
-                                <a href="#">Courses <i class="feather-chevron-down"></i></a>
+                                <a href="{{url('/courses')}}">Courses <i class="feather-chevron-down"></i></a>
                                 <!-- Start Mega Menu  -->
                                 <div class="rbt-megamenu grid-item-2">
                                     <div class="wrapper">

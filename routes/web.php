@@ -12,6 +12,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Config cache clear
+Route::get('clear', function () {
+    \Artisan::call('cache:clear');
+    \Artisan::call('key:generate');
+    \Artisan::call('config:clear');
+    \Artisan::call('route:clear');
+    \Artisan::call('view:clear');
+    \Artisan::call('optimize');
+    dd("All clear!");
+});
 
 Route::get('/', function () {
     return view('frontend.home.index');
@@ -26,7 +36,7 @@ Route::get('/blog-details', [App\Http\Controllers\Frontend\FrontendController::c
 Route::get('/memberships', [App\Http\Controllers\Frontend\FrontendController::class, 'memberships']);
 Route::get('/privacy-policy', [App\Http\Controllers\Frontend\FrontendController::class, 'privacyPolicy']);
 Route::get('/terms-of-condition', [App\Http\Controllers\Frontend\FrontendController::class, 'termsOfCondition']);
-Route::get('/all-courses', [App\Http\Controllers\Frontend\FrontendController::class, 'allCourses']);
+Route::get('/courses', [App\Http\Controllers\Frontend\FrontendController::class, 'allCourses']);
 Route::get('/course-details', [App\Http\Controllers\Frontend\FrontendController::class, 'courseDetails']);
 ///user mange route
 Route::get('/dashboard', [App\Http\Controllers\Frontend\FrontendController::class, 'userDashboard']);

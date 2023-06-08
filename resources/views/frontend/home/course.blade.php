@@ -3,8 +3,8 @@
         <div class="row mb--60">
             <div class="col-lg-12">
                 <div class="section-title text-center">
-                    <span class="subtitle bg-secondary-opacity">Top Popular Course</span>
-                    <h2 class="title">Histudy Course student <br /> can join with us.</h2>
+                    <span class="subtitle bg-secondary-opacity">Build My Expert Status</span>
+                    <h2 class="title">Explode My Expert Status</h2>
                 </div>
             </div>
         </div>
@@ -14,8 +14,8 @@
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="rbt-card variation-01 rbt-hover">
                     <div class="rbt-card-img">
-                        <a href="">
-                            <img src="{{asset('/frontend/')}}/assets/images/course/course-01.jpg" alt="Card image">
+                        <a href="{{url('/course-details')}}">
+                            <img src="{{asset('/frontend/')}}/assets/images/course/pen-course.png" alt="Card image">
                             <div class="rbt-badge-3 bg-white">
                                 <span>-50%</span>
                                 <span>Off</span>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
 
-                        <h4 class="rbt-card-title"><a href="course-details.html">React Front To Back</a>
+                        <h4 class="rbt-card-title"><a href="{{url('/course-details')}}">PEN</a>
                         </h4>
                         <ul class="rbt-meta">
                             <li><i class="feather-book"></i>20 Lessons</li>
@@ -64,7 +64,7 @@
                                 <span class="current-price">$60</span>
                                 <span class="off-price">$120</span>
                             </div>
-                            <a class="rbt-btn-link" href="course-details.html">Learn
+                            <a class="rbt-btn-link" href="{{url('/course-details')}}">Learn
                                 More<i class="feather-arrow-right"></i></a>
                         </div>
                     </div>
@@ -76,8 +76,8 @@
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="rbt-card variation-01 rbt-hover">
                     <div class="rbt-card-img">
-                        <a href="course-details.html">
-                            <img src="{{asset('/frontend/')}}/assets/images/course/course-02.jpg" alt="Card image">
+                        <a href="{{url('/course-details')}}">
+                            <img src="{{asset('/frontend/')}}/assets/images/course/polish.png" alt="Card image">
                             <div class="rbt-badge-3 bg-white">
                                 <span>-40%</span>
                                 <span>Off</span>
@@ -100,7 +100,7 @@
                                 <a class="rbt-round-btn" title="Bookmark" href="#"><i class="feather-bookmark"></i></a>
                             </div>
                         </div>
-                        <h4 class="rbt-card-title"><a href="course-details.html">PHP Beginner + Advanced</a>
+                        <h4 class="rbt-card-title"><a href="course-details.html">POLISH</a>
                         </h4>
                         <ul class="rbt-meta">
                             <li><i class="feather-book"></i>12 Lessons</li>
@@ -135,7 +135,7 @@
                 <div class="rbt-card variation-01 rbt-hover">
                     <div class="rbt-card-img">
                         <a href="course-details.html">
-                            <img src="{{asset('/frontend/')}}/assets/images/course/course-03.jpg" alt="Card image">
+                            <img src="{{asset('/frontend/')}}/assets/images/course/publish.png" alt="Card image">
                             <div class="rbt-badge-3 bg-white">
                                 <span>-40%</span>
                                 <span>Off</span>
@@ -158,7 +158,7 @@
                                 <a class="rbt-round-btn" title="Bookmark" href="#"><i class="feather-bookmark"></i></a>
                             </div>
                         </div>
-                        <h4 class="rbt-card-title"><a href="course-details.html">Angular Zero to Mastery</a>
+                        <h4 class="rbt-card-title"><a href="course-details.html">PUBLISH</a>
                         </h4>
                         <ul class="rbt-meta">
                             <li><i class="feather-book"></i>8 Lessons</li>
@@ -195,9 +195,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="load-more-btn mt--60 text-center">
-                    <a class="rbt-btn btn-gradient btn-lg hover-icon-reverse" href="#">
+                    <a class="rbt-btn btn-gradient btn-lg hover-icon-reverse" href="{{url('/courses')}}">
                                 <span class="icon-reverse-wrapper">
-                                    <span class="btn-text">Load More Course (40)</span>
+                                    <span class="btn-text">All Course (40)</span>
                                 <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                 <span class="btn-icon"><i class="feather-arrow-right"></i></span>
                                 </span>

@@ -75,8 +75,8 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30">
                     <div class="footer-widget">
                         <h5 class="ft-title">Get Contact</h5>
-                        <ul class="ft-link">
-                            <li><span>Phone:</span> <a href="#">(406) 555-0120</a></li>
+                        <ul class="ft-link" >
+{{--                            <li><span>Phone:</span> <a href="#">(406) 555-0120</a></li>--}}
                             <li><span>E-mail:</span> <a href="mailto:hr@example.com">rainbow@example.com</a></li>
                             <li><span>Location:</span> North America, USA</li>
                         </ul>

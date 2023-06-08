@@ -5,7 +5,7 @@
 <script src="{{asset('/frontend/')}}/assets/js/vendor/bootstrap.min.js"></script>
 <!-- sal.js -->
 <script src="{{asset('/frontend/')}}/assets/js/vendor/sal.js"></script>
-<script src="{{asset('/frontend/')}}/assets/js/vendor/swiper.js"></script>
+{{--<script src="{{asset('/frontend/')}}/assets/js/vendor/swiper.js"></script>--}}
 <script src="{{asset('/frontend/')}}/assets/js/vendor/magnify.min.js"></script>
 <script src="{{asset('/frontend/')}}/assets/js/vendor/jquery-appear.js"></script>
 <script src="{{asset('/frontend/')}}/assets/js/vendor/odometer.js"></script>

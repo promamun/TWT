@@ -13,6 +13,9 @@
     <!-- CSS
 	============================================ -->
     @include('frontend.include.style')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    @stack('style')
 </head>
 
 <body class="rbt-header-sticky">
@@ -812,5 +815,6 @@
 ============================================ -->
 <!-- Modernizer JS -->
 @include('frontend.include.script')
+@stack('script')
 </body>
 </html>

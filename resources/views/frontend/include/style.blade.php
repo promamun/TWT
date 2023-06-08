@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{{asset('/frontend/')}}/assets/css/plugins/feather.css">
 <link rel="stylesheet" href="{{asset('/frontend/')}}/assets/css/plugins/fontawesome.min.css">
 <link rel="stylesheet" href="{{asset('/frontend/')}}/assets/css/plugins/euclid-circulara.css">
-<link rel="stylesheet" href="{{asset('/frontend/')}}/assets/css/plugins/swiper.css">
+{{--<link rel="stylesheet" href="{{asset('/frontend/')}}/assets/css/plugins/swiper.css">--}}
 <link rel="stylesheet" href="{{asset('/frontend/')}}/assets/css/plugins/magnify.css">
 <link rel="stylesheet" href="{{asset('/frontend/')}}/assets/css/plugins/odometer.css">
 <link rel="stylesheet" href="{{asset('/frontend/')}}/assets/css/plugins/animation.css">

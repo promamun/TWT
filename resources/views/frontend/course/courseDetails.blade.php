@@ -81,7 +81,7 @@
                 <div class="col-lg-8">
                     <div class="course-details-content">
                         <div class="rbt-course-feature-box rbt-shadow-box thuumbnail">
-                            <img class="w-100" src="{{asset('/frontend/')}}/assets/images/course/course-01.jpg" alt="Card image">
+                            <img class="w-100" src="{{asset('/frontend/')}}/assets/images/course/pen-course.png" alt="Card image">
                         </div>
 
                         <div class="rbt-inner-onepage-navigation sticky-top mt--30">

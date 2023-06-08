@@ -115,6 +115,7 @@
 ***************************************************************/
 /**************************************
     Default Styles
+
 ***************************************/
 /*-- Variables --*/
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400&amp;display=swap");
@@ -323,7 +324,12 @@ samp {
   hyphens: none;
   color: var(--color-primary);
 }
-
+@font-face {
+    font-family: 'Chilanka';
+    src: url('../fonts/chilanka.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 kbd,
 ins {
   color: #ffffff;
@@ -8696,7 +8702,10 @@ hr {
 }
 
 .bg_image--11 {
-  background-image: url(../images/bg/bg-image-11.jpg);
+  background-image: url(../images/bg/bg-image-11.png);
+}
+.bg_image--111 {
+    background-image: url("../images/bg/bg-image-111.png");
 }
 
 .bg_image--12 {
@@ -14665,7 +14674,7 @@ span.transparent-button:hover i {
   box-shadow: var(--shadow-1);
   padding: 30px;
   border-radius: var(--radius);
-  background: var(--color-white);
+  /*background: var(--color-white);*/
   position: relative;
   height: 100%;
 }
@@ -14771,7 +14780,8 @@ span.transparent-button:hover i {
   }
 }
 .rbt-card .rbt-card-body .rbt-card-text {
-  color: var(--color-body);
+  /*color: var(--color-body);*/
+  color: white;
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 1199px) {
@@ -24125,7 +24135,7 @@ blockquote.has-text-align-right cite,
 }
 
 .height-750 {
-  height: 750px;
+  height: 450px;
   display: flex;
   align-items: center;
 }
@@ -24618,7 +24628,7 @@ blockquote.has-text-align-right cite,
   margin-bottom: 10px;
 }
 .rbt-banner-3 .banner-content .inner .title {
-  font-size: 75px;
+  font-size: 60px;
   font-weight: 700;
   margin-bottom: 30px;
 }

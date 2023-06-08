@@ -172,7 +172,7 @@
                         <div class="rbt-card variation-01 rbt-hover">
                             <div class="rbt-card-img">
                                 <a href="{{url('/course-details')}}">
-                                    <img src="{{asset('/frontend/')}}/assets/images/course/course-online-01.jpg" alt="Card image">
+                                    <img src="{{asset('/frontend/')}}/assets/images/course/pen-course.png" alt="Card image">
                                     <div class="rbt-badge-3 bg-white">
                                         <span>-40%</span>
                                         <span>Off</span>
@@ -197,7 +197,7 @@
                                     </div>
                                 </div>
 
-                                <h4 class="rbt-card-title"><a href="{{url('/course-details')}}">React Front To Back</a>
+                                <h4 class="rbt-card-title"><a href="{{url('/course-details')}}">PEN</a>
                                 </h4>
 
                                 <ul class="rbt-meta">
@@ -235,7 +235,7 @@
                         <div class="rbt-card variation-01 rbt-hover">
                             <div class="rbt-card-img">
                                 <a href="course-details.html">
-                                    <img src="{{asset('/frontend/')}}/assets/images/course/course-online-02.jpg" alt="Card image">
+                                    <img src="{{asset('/frontend/')}}/assets/images/course/polish.png" alt="Card image">
                                 </a>
                             </div>
                             <div class="rbt-card-body">
@@ -255,7 +255,7 @@
                                                 class="feather-bookmark"></i></a>
                                     </div>
                                 </div>
-                                <h4 class="rbt-card-title"><a href="course-details.html">PHP Beginner Advanced</a>
+                                <h4 class="rbt-card-title"><a href="course-details.html">POLISH</a>
                                 </h4>
                                 <ul class="rbt-meta">
                                     <li><i class="feather-book"></i>12 Lessons</li>
@@ -292,7 +292,7 @@
                         <div class="rbt-card variation-01 rbt-hover">
                             <div class="rbt-card-img">
                                 <a href="course-details.html">
-                                    <img src="{{asset('/frontend/')}}/assets/images/course/course-online-03.jpg" alt="Card image">
+                                    <img src="{{asset('/frontend/')}}/assets/images/course/publish.png" alt="Card image">
                                     <div class="rbt-badge-3 bg-white">
                                         <span>-10%</span>
                                         <span>Off</span>
@@ -316,7 +316,7 @@
                                                 class="feather-bookmark"></i></a>
                                     </div>
                                 </div>
-                                <h4 class="rbt-card-title"><a href="course-details.html">Angular Zero to Mastery</a>
+                                <h4 class="rbt-card-title"><a href="course-details.html">PUBLISH</a>
                                 </h4>
                                 <ul class="rbt-meta">
                                     <li><i class="feather-book"></i>8 Lessons</li>
@@ -353,7 +353,7 @@
                         <div class="rbt-card variation-01 rbt-hover">
                             <div class="rbt-card-img">
                                 <a href="course-details.html">
-                                    <img src="{{asset('/frontend/')}}/assets/images/course/course-online-04.jpg" alt="Card image">
+                                    <img src="{{asset('/frontend/')}}/assets/images/course/promote.png" alt="Card image">
                                     <div class="rbt-badge-3 bg-white">
                                         <span>-40%</span>
                                         <span>Off</span>
@@ -378,7 +378,7 @@
                                     </div>
                                 </div>
 
-                                <h4 class="rbt-card-title"><a href="course-details.html">Web Front To Back</a>
+                                <h4 class="rbt-card-title"><a href="course-details.html">PROMOTE</a>
                                 </h4>
                                 <ul class="rbt-meta">
                                     <li><i class="feather-book"></i>20 Lessons</li>
