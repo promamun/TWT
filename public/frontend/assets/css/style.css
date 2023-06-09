@@ -461,8 +461,16 @@ input[type=submit] {
   appearance: button;
   cursor: pointer;
 }
-
-button[disabled],
+button[disabled]{
+    opacity: 0.6; /* Reduce the opacity to indicate disabled state */
+    cursor: not-allowed; /* Change the cursor to indicate unclickable */
+    pointer-events: none;
+}
+a[disabled]{
+    opacity: 0.6; /* Reduce the opacity to indicate disabled state */
+    cursor: not-allowed; /* Change the cursor to indicate unclickable */
+    pointer-events: none;
+}
 input[disabled] {
   cursor: default;
 }

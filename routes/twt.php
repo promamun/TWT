@@ -14,10 +14,18 @@ Route::group(['prefix' => 'twt'], function () {
         });
         Route::group(['prefix' => 'privacy/policy'], function () {
             Route::get('/create', [App\Http\Controllers\TWT\PrivacyPolicyController::class, 'PrivacyPolicyCreate']);
+            Route::get('/edit/{id}', [App\Http\Controllers\TWT\PrivacyPolicyController::class, 'PrivacyPolicyEdit']);
+            Route::post('/store', [App\Http\Controllers\TWT\PrivacyPolicyController::class, 'PrivacyPolicyStore']);
+            Route::post('/update/{id}', [App\Http\Controllers\TWT\PrivacyPolicyController::class, 'PrivacyPolicyUpdate']);
             Route::get('/manage', [App\Http\Controllers\TWT\PrivacyPolicyController::class, 'PrivacyPolicyManage']);
+            Route::get('/delete/{id}', [App\Http\Controllers\TWT\PrivacyPolicyController::class, 'PrivacyPolicyDestroy']);
         });
         Route::group(['prefix' => 'terms/of/use'], function () {
             Route::get('/create', [App\Http\Controllers\TWT\JanineTermsController::class, 'termsCreate']);
+            Route::get('/edit/{id}', [App\Http\Controllers\TWT\JanineTermsController::class, 'termsEdit']);
+            Route::post('/store', [App\Http\Controllers\TWT\JanineTermsController::class, 'termsStore']);
+            Route::post('/update/{id}', [App\Http\Controllers\TWT\JanineTermsController::class, 'termsUpdate']);
+            Route::get('/delete/{id}', [App\Http\Controllers\TWT\JanineTermsController::class, 'termsDestroy']);
             Route::get('/manage', [App\Http\Controllers\TWT\JanineTermsController::class, 'termsManage']);
         });
         Route::group(['prefix' => 'blog'], function () {

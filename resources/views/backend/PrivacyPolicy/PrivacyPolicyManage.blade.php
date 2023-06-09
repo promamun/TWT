@@ -15,8 +15,11 @@
                         </div>
                         <div class="col-lg-6 rbt-title-style-3">
                             <div class="call-to-btn text-start text-lg-end position-relative">
-                                <a class="rbt-btn btn-sm rbt-switch-btn rbt-switch-y" href="{{url('/twt/privacy/policy/create')}}">
-                                    <span data-text="Add New About"> Add New Privacy Policy</span>
+                                <a @if($policyCount > 0) disabled="disabled" @endif class="rbt-btn btn-sm rbt-switch-btn rbt-switch-y" href="{{url('/twt/privacy/policy/create')}}">
+                                    <span data-text="Add Policy"> Add Privacy Policy</span>
+                                </a>
+                                <a class="rbt-btn btn-sm rbt-switch-btn rbt-switch-y" href="{{ url()->previous() }}">
+                                    <span data-text="GO Back"> Back</span>
                                 </a>
                             </div>
                         </div>
@@ -26,79 +29,35 @@
                     <table class="rbt-table table table-borderless">
                         <thead>
                         <tr>
-                            <th>Date</th>
-                            <th>Announcements</th>
-                            <th class="text-center">Action</th>
+                            <th>SN</th>
+                            <th>DATE</th>
+                            <th>DATA</th>
+                            <th class="text-center">ACTION</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
+                        @foreach($policyData as $data)
+                            <tr>
                             <th>
-                                <span class="h6 mb--5">March 16, 2022</span>
-                                <p class="b3">10.00am</p>
+                                <span class="h6 mb--5">{{$loop->index +1}}</span>
+                            </th>
+                                <th>
+                                <span class="h6 mb--5">{{date('Y-M-d',strtotime($data->created_at))}}</span>
                             </th>
                             <td>
-                                <span class="h6 mb--5">Announcement Title</span>
-                                <p class="b3">Course: Fundamentals 101</p>
+                                <span class="h6 mb--5">
+                                    {!! $data->privacy !!}
+                                </span>
                             </td>
                             <td>
                                 <div class="rbt-button-group justify-content-end">
-                                    <a class="rbt-btn-link left-icon" href="#"><i class="feather-edit"></i> Edit</a>
-                                    <a class="rbt-btn-link left-icon" href="#"><i class="feather-trash-2"></i> Delete</a>
+                                    <a class="rbt-btn-link left-icon" href="{{url('/twt/privacy/policy/edit/'.$data->id)}}"><i class="feather-edit"></i> Edit</a>
+                                    <a class="rbt-btn-link left-icon" href="{{url('/twt/privacy/policy/delete/'.$data->id)}}" onclick="return confirm('Want to Destroy?')"><i class="feather-trash-2"></i> Delete</a>
                                 </div>
                             </td>
                         </tr>
-                        <tr>
-                            <th>
-                                <span class="h6 mb--5">Janu 16, 2022</span>
-                                <p class="b3">12.00am</p>
-                            </th>
-                            <td>
-                                <span class="h6 mb--5">Web Design</span>
-                                <p class="b3">Course: Web Design</p>
-                            </td>
-                            <td>
-                                <div class="rbt-button-group justify-content-end">
-                                    <a class="rbt-btn-link left-icon" href="#"><i class="feather-edit"></i> Edit</a>
-                                    <a class="rbt-btn-link left-icon" href="#"><i class="feather-trash-2"></i> Delete</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <span class="h6 mb--5">Janu 16, 2022</span>
-                                <p class="b3">12.00am</p>
-                            </th>
-                            <td>
-                                <span class="h6 mb--5">App Development</span>
-                                <p class="b3">Course: App Development</p>
-                            </td>
-                            <td>
-                                <div class="rbt-button-group justify-content-end">
-                                    <a class="rbt-btn-link left-icon" href="#"><i class="feather-edit"></i> Edit</a>
-                                    <a class="rbt-btn-link left-icon" href="#"><i class="feather-trash-2"></i> Delete</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <span class="h6 mb--5">Janu 16, 2022</span>
-                                <p class="b3">12.00am</p>
-                            </th>
-                            <td>
-                                <span class="h6 mb--5">Announcement Title</span>
-                                <p class="b3">Course: Web Design</p>
-                            </td>
-                            <td>
-                                <div class="rbt-button-group justify-content-end">
-                                    <a class="rbt-btn-link left-icon" href="#"><i class="feather-edit"></i> Edit</a>
-                                    <a class="rbt-btn-link left-icon" href="#"><i class="feather-trash-2"></i> Delete</a>
-                                </div>
-                            </td>
-                        </tr>
-
+                        @endforeach
                         </tbody>
-
                     </table>
                 </div>
             </div>
@@ -106,3 +65,9 @@
         <!-- End Enrole Course  -->
     </div>
 @endsection
+@push('script')
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+    <script>
+        var editor = new FroalaEditor('#privacy');
+    </script>
+@endpush

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\PrivacyPolicy;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -19,7 +20,8 @@ class FrontendController extends Controller
         return view('frontend.membership.index');
     }
     public function privacyPolicy(){
-        return view('frontend.home.privacyPolicy');
+        $policyData = PrivacyPolicy::all();
+        return view('frontend.home.privacyPolicy',compact('policyData'));
     }
     public function termsOfCondition(){
         return view('frontend.home.termsOfCondition');

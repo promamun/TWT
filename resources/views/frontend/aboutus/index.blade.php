@@ -3,27 +3,45 @@
     About-Janine
 @endsection
 @section('content')
-    <div class="rbt-newsletter-area newsletter-style-2 bg-color-primary rbt-section-gap">
-        <div class="rbt-callto-action-area">
-            <div class="rbt-callto-action rbt-cta-default style-4 mt--75">
-                <div class="container">
-                    <div class="row align-items-center content-wrapper row--30 mt_dec--30 position-relative">
-                        <div class="col-lg-8 mt--30 offset-lg-3">
-                            <div class="inner">
-                                <div class="content text-left">
-                                    <h2 class="title color-white" data-sal="slide-up">Hey There!</h2>
-                                    <div class="inner-content text-start">
-                                        <p class="color-white mt-2">
-                                            <strong >I'm Janine.</strong><br>
-                                            An entrepreneur, writer, author, and unwavering optimist. The glass is refillable, not half full or half empty.
-                                            My life’s purpose is to help you Explode Your Expression by improving your communication and clarity and up-leveling your expert status through real story-based, written content.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+    <div class="rbt-banner-5 height-650 bg_image bg_image--19">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="inner text-start">
+                        <h2 class="title"><span class="text-decoration-underline">Histudy</span> Starter is a community for creative people</h2>
+                        <p class="description">We just don't give our student only lecture but real life
+                            experience.</p>
+                        <div class="slider-btn rbt-button-group justify-content-start">
+                            <a class="rbt-btn btn-border icon-hover color-white radius-round" href="#">
+                                <span class="btn-text">Explore Courses</span>
+                                <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                            </a>
+                            <a class="rbt-btn-link color-white" href="#">Start learning<i class="feather-arrow-right"></i></a>
                         </div>
-                        <div class="thumbnail">
-                            <img class="w-100" src="{{asset('/frontend/')}}/assets/images/shape/Janine.png" alt="Shape Images">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rbt-about-area bg-color-white rbt-section-gap" id="about">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 rbt-cat-box-1 order-2 order-lg-1 ">
+                    <div class="content">
+                        <a href="{{url('https://www.facebook.com/SM99Shopping')}}" target="_blank">
+                            <img data-parallax='{"x": 0, "y": 80}' src="{{asset('/frontend/')}}/assets/images/shape/Janine.png" alt="About Images">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="inner">
+                        <div class="section-title text-start" data-parallax='{"x": 0, "y": 80}'>
+                            <h2 class="title theme-gradient rbt-display-1">Hey There!</h2>
+                            <p class="description mt--20">
+                                <strong >I'm Janine.</strong><br>
+                                An entrepreneur, writer, author, and unwavering optimist. The glass is refillable, not half full or half empty.
+                                My life’s purpose is to help you Explode Your Expression by improving your communication and clarity and up-leveling your expert status through real story-based, written content.
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -2,9 +2,13 @@
 @section('title')
     About-Create
 @endsection
+@push('style')
+    <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
+@endpush
 @section('adminContent')
     <div class="col-lg-9">
         <!-- Start Enrole Course  -->
+        <textarea name="about" id="about" cols="30" rows="10"></textarea>
         <div class="rbt-dashboard-content bg-color-white rbt-shadow-box">
             <div class="content">
                 <div class="section-title">
@@ -106,3 +110,9 @@
         <!-- End Enrole Course  -->
     </div>
 @endsection
+@push('script')
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+    <script>
+        var editor = new FroalaEditor('#about');
+    </script>
+@endpush

@@ -1,6 +1,6 @@
 @extends('backend.adminMaster')
 @section('title')
-    Privacy-Policy-Create
+    Privacy-Policy-Update
 @endsection
 @push('style')
     <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
@@ -32,10 +32,10 @@
                     @if(Session()->has('error'))
                         <div class="alert alert-danger">{{Session()->get('error')}}</div>
                     @endif
-                    <form action="{{url('/twt/privacy/policy/store')}}" method="post">
+                    <form action="{{url('/twt/privacy/policy/update/'.$policyData->id)}}" method="post">
                         @csrf
-                        <textarea name="privacy" id="privacy" cols="30" rows="10"></textarea>
-                        <button type="submit" class="rbt-btn btn-sm float-md-end mt-5">Submit</button>
+                        <textarea name="privacy" id="privacy" cols="30" rows="10">{!! $policyData->privacy !!}</textarea>
+                        <button id="submitButton" type="submit" class="rbt-btn btn-sm float-md-end mt-5">Update</button>
                     </form>
                 </div>
             </div>
