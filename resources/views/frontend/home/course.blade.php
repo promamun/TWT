@@ -11,12 +11,12 @@
         <!-- Start Card Area -->
         <div class="row g-5">
             <!-- Start Single Course  -->
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="col-lg-3 col-md-6 col-12">
                 <div class="rbt-card variation-01 rbt-hover">
                     <div class="rbt-card-img">
                         <a href="{{url('/course-details')}}">
                             <img src="{{asset('/frontend/')}}/assets/images/course/pen-course.png" alt="Card image">
-                            <div class="rbt-badge-3 bg-white">
+                            <div class="rbt-badge-3-custom bg-white">
                                 <span>-50%</span>
                                 <span>Off</span>
                             </div>
@@ -73,12 +73,12 @@
             <!-- End Single Course  -->
 
             <!-- Start Single Course  -->
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="col-lg-3 col-md-6 col-12">
                 <div class="rbt-card variation-01 rbt-hover">
                     <div class="rbt-card-img">
                         <a href="{{url('/course-details')}}">
                             <img src="{{asset('/frontend/')}}/assets/images/course/polish.png" alt="Card image">
-                            <div class="rbt-badge-3 bg-white">
+                            <div class="rbt-badge-3-custom bg-white">
                                 <span>-40%</span>
                                 <span>Off</span>
                             </div>
@@ -131,12 +131,12 @@
             <!-- End Single Course  -->
 
             <!-- Start Single Course  -->
-            <div class="col-lg-4 col-md-6 col-12">
+            <div class="col-lg-3 col-md-6 col-12">
                 <div class="rbt-card variation-01 rbt-hover">
                     <div class="rbt-card-img">
                         <a href="course-details.html">
                             <img src="{{asset('/frontend/')}}/assets/images/course/publish.png" alt="Card image">
-                            <div class="rbt-badge-3 bg-white">
+                            <div class="rbt-badge-3-custom bg-white">
                                 <span>-40%</span>
                                 <span>Off</span>
                             </div>
@@ -159,6 +159,65 @@
                             </div>
                         </div>
                         <h4 class="rbt-card-title"><a href="course-details.html">PUBLISH</a>
+                        </h4>
+                        <ul class="rbt-meta">
+                            <li><i class="feather-book"></i>8 Lessons</li>
+                            <li><i class="feather-users"></i>30 Students</li>
+                        </ul>
+                        <p class="rbt-card-text">Angular Js long fact that a reader will be distracted by
+                            the readable.</p>
+
+                        <div class="rbt-author-meta mb--20">
+                            <div class="rbt-avater">
+                                <a href="#">
+                                    <img src="{{asset('/frontend/')}}/assets/images/client/avatar-03.png" alt="Sophia Jaymes">
+                                </a>
+                            </div>
+                            <div class="rbt-author-info">
+                                By <a href="profile.html">Slaughter</a> In <a href="#">Languages</a>
+                            </div>
+                        </div>
+                        <div class="rbt-card-bottom">
+                            <div class="rbt-price">
+                                <span class="current-price">$80</span>
+                                <span class="off-price">$100</span>
+                            </div>
+                            <a class="rbt-btn-link" href="course-details.html">Learn
+                                More<i class="feather-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Course  -->
+            <!-- Start Single Course  -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="rbt-card variation-01 rbt-hover">
+                    <div class="rbt-card-img">
+                        <a href="course-details.html">
+                            <img src="{{asset('/frontend/')}}/assets/images/course/promote.png" alt="Card image">
+                            <div class="rbt-badge-3-custom bg-white">
+                                <span>-40%</span>
+                                <span>Off</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="rbt-card-body">
+                        <div class="rbt-card-top">
+                            <div class="rbt-review">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count"> (5 Reviews)</span>
+                            </div>
+                            <div class="rbt-bookmark-btn">
+                                <a class="rbt-round-btn" title="Bookmark" href="#"><i class="feather-bookmark"></i></a>
+                            </div>
+                        </div>
+                        <h4 class="rbt-card-title"><a href="course-details.html">PROMOTE</a>
                         </h4>
                         <ul class="rbt-meta">
                             <li><i class="feather-book"></i>8 Lessons</li>

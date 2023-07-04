@@ -30,15 +30,22 @@ Route::group(['prefix' => 'twt'], function () {
         });
         Route::group(['prefix' => 'blog'], function () {
             Route::get('/create', [App\Http\Controllers\TWT\BlogController::class, 'BlogCreate']);
+            Route::get('/edit/{id}', [App\Http\Controllers\TWT\BlogController::class, 'BlogEdit']);
+            Route::post('/store', [App\Http\Controllers\TWT\BlogController::class, 'BlogStore']);
+            Route::post('/update/{id}', [App\Http\Controllers\TWT\BlogController::class, 'BlogUpdate']);
             Route::get('/manage', [App\Http\Controllers\TWT\BlogController::class, 'BlogManage']);
         });
         Route::group(['prefix' => 'membership'], function () {
             Route::get('/create', [App\Http\Controllers\TWT\MembershipController::class, 'MembershipCreate']);
             Route::get('/manage', [App\Http\Controllers\TWT\MembershipController::class, 'MembershipManage']);
         });
-        Route::group(['prefix' => 'courses'], function () {
-            Route::get('/create', [App\Http\Controllers\TWT\CoursesController::class, 'CoursesCreate']);
-            Route::get('/manage', [App\Http\Controllers\TWT\CoursesController::class, 'CoursesManage']);
+        Route::group(['prefix' => 'course'], function () {
+            Route::get('/create', [App\Http\Controllers\TWT\CoursesController::class, 'CourseCreate']);
+            Route::get('/edit/{id}', [App\Http\Controllers\TWT\CoursesController::class, 'CourseEdit']);
+            Route::post('/update/{id}', [App\Http\Controllers\TWT\CoursesController::class, 'CourseUpdate']);
+            Route::get('/manage', [App\Http\Controllers\TWT\CoursesController::class, 'CourseManage']);
+            Route::post('/store', [App\Http\Controllers\TWT\CoursesController::class, 'CourseStore']);
+            Route::get('/delete/{id}', [App\Http\Controllers\TWT\CoursesController::class, 'CourseDelete']);
         });
     });
 });

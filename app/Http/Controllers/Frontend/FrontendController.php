@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Course;
+use App\Models\JanineTerm;
 use App\Models\PrivacyPolicy;
 use Illuminate\Http\Request;
 
@@ -24,13 +26,16 @@ class FrontendController extends Controller
         return view('frontend.home.privacyPolicy',compact('policyData'));
     }
     public function termsOfCondition(){
-        return view('frontend.home.termsOfCondition');
+        $termsData = JanineTerm::all();
+        return view('frontend.home.termsOfCondition',compact('termsData'));
     }
     public function allCourses(){
-        return view('frontend.course.allCourses');
+        $publishCourse = Course::where('status','Publish')->orderBY('id','desc')->get();
+        return view('frontend.course.allCourses',compact('publishCourse'));
     }
-    public function courseDetails(){
-        return view('frontend.course.courseDetails');
+    public function courseDetails($id){
+        $courseDetails = Course::find($id);
+        return view('frontend.course.courseDetails',compact('courseDetails'));
     }
     public function userProfile(){
         return view('frontend.user.profile');

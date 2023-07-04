@@ -16,11 +16,10 @@
                             <li>
                                 <div class="icon-right"><i class="feather-chevron-right"></i></div>
                             </li>
-                            <li class="rbt-breadcrumb-item active">Web Development</li>
+                            <li class="rbt-breadcrumb-item active">Course</li>
                         </ul>
-                        <h2 class="title">The Complete Histudy 2022: From Zero to Expert!</h2>
-                        <p class="description">Master Python by building 100 projects in 100 days. Learn data
-                            science, automation, build websites, games and apps!</p>
+                        <h2 class="title">{{$courseDetails->title}}</h2>
+                        <p class="description">{!! substr(strip_tags($courseDetails->description), 0, 100) !!}....</p>
 
                         <div class="d-flex align-items-center mb--20 flex-wrap rbt-course-details-feature">
 
@@ -49,20 +48,8 @@
                             </div>
 
                         </div>
-
-                        <div class="rbt-author-meta mb--20">
-                            <div class="rbt-avater">
-                                <a href="#">
-                                    <img src="{{asset('/frontend/')}}/assets/images/client/avatar-02.png" alt="Sophia Jaymes">
-                                </a>
-                            </div>
-                            <div class="rbt-author-info">
-                                By <a href="profile.html">Angela</a> In <a href="#">Development</a>
-                            </div>
-                        </div>
-
                         <ul class="rbt-meta">
-                            <li><i class="feather-calendar"></i>Last updated 12/2024</li>
+                            <li><i class="feather-calendar"></i>Last updated {{date('Y-M-d',strtotime($courseDetails->updated_at))}}</li>
                             <li><i class="feather-globe"></i>English</li>
                             <li><i class="feather-award"></i>Certified Course</li>
                         </ul>
@@ -81,7 +68,7 @@
                 <div class="col-lg-8">
                     <div class="course-details-content">
                         <div class="rbt-course-feature-box rbt-shadow-box thuumbnail">
-                            <img class="w-100" src="{{asset('/frontend/')}}/assets/images/course/pen-course.png" alt="Card image">
+                            <img class="w-100" src="{{asset('/course/'.$courseDetails->image)}}" alt="Course image">
                         </div>
 
                         <div class="rbt-inner-onepage-navigation sticky-top mt--30">
@@ -97,9 +84,6 @@
                                         <a href="#details">Details</a>
                                     </li>
                                     <li>
-                                        <a href="#intructor">Intructor</a>
-                                    </li>
-                                    <li>
                                         <a href="#review">Review</a>
                                     </li>
                                 </ul>
@@ -112,62 +96,7 @@
                                 <div class="section-title">
                                     <h4 class="rbt-title-style-3">What you'll learn</h4>
                                 </div>
-                                <p>Are you new to PHP or need a refresher? Then this course will help you get
-                                    all the fundamentals of Procedural PHP, Object Oriented PHP, MYSQLi and
-                                    ending the course by building a CMS system similar to WordPress, Joomla or
-                                    Drupal. Knowing PHP has allowed me to make enough money to stay home and
-                                    make courses like this one for students all over the world. </p>
-
-                                <div class="row g-5 mb--30">
-                                    <!-- Start Feture Box  -->
-                                    <div class="col-lg-6">
-                                        <ul class="rbt-list-style-1">
-                                            <li><i class="feather-check"></i>Become an advanced, confident, and
-                                                modern
-                                                JavaScript developer from scratch.</li>
-                                            <li><i class="feather-check"></i>Have an intermediate skill level of
-                                                Python
-                                                programming.</li>
-                                            <li><i class="feather-check"></i>Have a portfolio of various data
-                                                analysis
-                                                projects.</li>
-                                            <li><i class="feather-check"></i>Use the numpy library to create and
-                                                manipulate
-                                                arrays.</li>
-                                        </ul>
-                                    </div>
-                                    <!-- End Feture Box  -->
-
-                                    <!-- Start Feture Box  -->
-                                    <div class="col-lg-6">
-                                        <ul class="rbt-list-style-1">
-                                            <li><i class="feather-check"></i>Use the Jupyter Notebook
-                                                Environment.
-                                                JavaScript developer from scratch.</li>
-                                            <li><i class="feather-check"></i>Use the pandas module with Python
-                                                to create and
-                                                structure data.</li>
-                                            <li><i class="feather-check"></i>Have a portfolio of various data
-                                                analysis
-                                                projects.</li>
-                                            <li><i class="feather-check"></i>Create data visualizations using
-                                                matplotlib and
-                                                the seaborn.</li>
-                                        </ul>
-                                    </div>
-                                    <!-- End Feture Box  -->
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam
-                                    voluptas laudantium incidunt architecto nam excepturi provident rem laborum
-                                    repellendus placeat neque aut doloremque ut ullam, veritatis nesciunt iusto
-                                    officia alias, non est vitae. Eius repudiandae optio quam alias aperiam nemo
-                                    nam tempora, dignissimos dicta excepturi ea quo ipsum omnis maiores
-                                    perferendis commodi voluptatum facere vel vero. Praesentium quisquam iure
-                                    veritatis, perferendis adipisci sequi blanditiis quidem porro eligendi
-                                    fugiat facilis inventore amet delectus expedita deserunt ut molestiae modi
-                                    laudantium, quia tenetur animi natus ea. Molestiae molestias ducimus
-                                    pariatur et consectetur. Error vero, eum soluta delectus necessitatibus
-                                    eligendi numquam hic at?</p>
+                                {!! $courseDetails->description !!}
                             </div>
                             <div class="rbt-show-more-btn">Show More</div>
                         </div>
@@ -544,99 +473,15 @@
                         <div class="rbt-course-feature-box rbt-shadow-box details-wrapper mt--30" id="details">
                             <div class="row g-5">
                                 <!-- Start Feture Box  -->
-                                <div class="col-lg-6">
+                                <div class="col-lg-12">
                                     <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">Requirements</h4>
+                                        <h4 class="rbt-title-style-3">Details</h4>
                                     </div>
-                                    <ul class="rbt-list-style-1">
-                                        <li><i class="feather-check"></i>Become an advanced, confident, and modern
-                                            JavaScript developer from scratch.</li>
-                                        <li><i class="feather-check"></i>Have an intermediate skill level of Python
-                                            programming.</li>
-                                        <li><i class="feather-check"></i>Have a portfolio of various data analysis
-                                            projects.</li>
-                                        <li><i class="feather-check"></i>Use the numpy library to create and manipulate
-                                            arrays.</li>
-                                    </ul>
+                                    {!! $courseDetails->description !!}
                                 </div>
-                                <!-- End Feture Box  -->
-
-                                <!-- Start Feture Box  -->
-                                <div class="col-lg-6">
-                                    <div class="section-title">
-                                        <h4 class="rbt-title-style-3 mb--20">Description</h4>
-                                    </div>
-                                    <ul class="rbt-list-style-1">
-                                        <li><i class="feather-check"></i>Use the Jupyter Notebook Environment.
-                                            JavaScript developer from scratch.</li>
-                                        <li><i class="feather-check"></i>Use the pandas module with Python to create and
-                                            structure data.</li>
-                                        <li><i class="feather-check"></i>Have a portfolio of various data analysis
-                                            projects.</li>
-                                        <li><i class="feather-check"></i>Create data visualizations using matplotlib and
-                                            the seaborn.</li>
-                                    </ul>
-                                </div>
-                                <!-- End Feture Box  -->
                             </div>
                         </div>
                         <!-- End Course Feature Box  -->
-
-                        <!-- Start Intructor Area  -->
-                        <div class="rbt-instructor rbt-shadow-box intructor-wrapper mt--30" id="intructor">
-                            <div class="about-author border-0 pb--0 pt--0">
-                                <div class="section-title mb--30">
-                                    <h4 class="rbt-title-style-3">Instructor</h4>
-                                </div>
-                                <div class="media align-items-center">
-                                    <div class="thumbnail">
-                                        <a href="#">
-                                            <img src="{{asset('/frontend/')}}/assets/images/testimonial/testimonial-7.jpg" alt="Author Images">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <div class="author-info">
-                                            <h5 class="title">
-                                                <a class="hover-flip-item-wrapper" href="author.html">B.M. Rafekul Islam</a>
-                                            </h5>
-                                            <span class="b3 subtitle">Advanced Educator</span>
-                                            <ul class="rbt-meta mb--20 mt--10">
-                                                <li><i class="fa fa-star color-warning"></i>75,237 Reviews <span class="rbt-badge-5 ml--5">4.4 Rating</span></li>
-                                                <li><i class="feather-users"></i>912,970 Students</li>
-                                                <li><a href="#"><i class="feather-video"></i>16 Courses</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="content">
-                                            <p class="description">John is a brilliant educator, whose life was spent
-                                                for computer science and love of nature.</p>
-
-                                            <ul class="social-icon social-default icon-naked justify-content-start">
-                                                <li><a href="https://www.facebook.com/">
-                                                        <i class="feather-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li><a href="https://www.twitter.com/">
-                                                        <i class="feather-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li><a href="https://www.instagram.com/">
-                                                        <i class="feather-instagram"></i>
-                                                    </a>
-                                                </li>
-                                                <li><a href="https://www.linkdin.com/">
-                                                        <i class="feather-linkedin"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Intructor Area  -->
-
                         <!-- Start Edu Review List  -->
                         <div class="rbt-review-wrapper rbt-shadow-box review-wrapper mt--30" id="review">
                             <div class="course-content">

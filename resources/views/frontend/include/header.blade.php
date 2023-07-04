@@ -98,10 +98,10 @@
                                         <div class="row row--15">
                                             <div class="col-lg-12 col-xl-6 col-xxl-12 single-mega-item">
                                                 <ul class="mega-menu-item">
-                                                    <li><a href="{{url('/')}}">Pen</a></li>
-                                                    <li><a href="{{url('/')}}">Polish</a></li>
-                                                    <li><a href="{{url('/')}}">Publish</a></li>
-                                                    <li><a href="{{url('/')}}">Promote</a></li>
+                                                    <li><a href="{{url('/course-details')}}">Pen</a></li>
+                                                    <li><a href="{{url('/course-details')}}">Polish</a></li>
+                                                    <li><a href="{{url('/course-details')}}">Publish</a></li>
+                                                    <li><a href="{{url('/course-details')}}">Promote</a></li>
                                                 </ul>
                                             </div>
                                         </div>

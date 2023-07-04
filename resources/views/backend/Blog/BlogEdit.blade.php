@@ -1,6 +1,6 @@
 @extends('backend.adminMaster')
 @section('title')
-    BLog-Create
+    BLog-Update
 @endsection
 @push('style')
     <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
@@ -31,25 +31,24 @@
                 </div>
                 <div class="rbt-dashboard-table table-responsive mobile-table-750 mt--30">
                     <div id="formElements" class="rbt-elements-area bg-color-white rbt-shadow-box mb--60">
+                        @if(Session()->has('error'))
+                            <div class="alert alert-danger">{{Session()->get('error')}}</div>
+                        @endif
                         <div class="wrapper">
-                            @if(Session()->has('error'))
-                                <div class="alert alert-danger">{{Session()->get('error')}}</div>
-                            @endif
-                            <form action="{{url('/twt/blog/store')}}" method="post" enctype="multipart/form-data">
+                            <form action="{{url('/twt/blog/update/'.$blogs->id)}}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="row g-5">
                                     <div class="col-lg-12">
                                         <h5>Blog Title<span class="text-danger">*</span></h5>
                                         <div class="form-group">
-                                            <input name="title" value="{{ old('title') }}" type="text">
-                                            <label>Title<span class="text-danger">*</span></label>
                                             <span class="focus-border"></span>
+                                            <input name="title" value="{{ $blogs->title }}" type="text">
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
-                                        <h5>Blog Banner<span class="text-danger">*</span></h5>
+                                        <h5>Blog Banner</h5>
                                         <div class="form-group">
-                                            <input id="image_input" onchange="validateFileFormat(this)" name="image" accept="image/png, image/jpeg,image/jpg" required type="file">
+                                            <input id="image_input" onchange="validateFileFormat(this)" name="image" accept="image/png, image/jpeg,image/jpg" type="file">
                                         </div>
                                     </div>
                                     <div class="col-lg-8">
@@ -57,7 +56,11 @@
                                             <div class="rbt-card variation-02 height-330 rbt-hover">
                                                 <div class="rbt-card-img">
                                                     <a href="#">
-                                                        <img id="uploaded_image" src="{{asset('/frontend/')}}/assets/images/blog/maxsize.png" alt="blog image">
+                                                        @if($blogs->image)
+                                                            <img id="uploaded_image" src="{{asset('/blog/'.$blogs->image)}}" alt="blog image">
+                                                        @else
+                                                            <img id="uploaded_image" src="{{asset('/frontend/')}}/assets/images/blog/maxsize.png" alt="blog image">
+                                                        @endif
                                                     </a>
                                                 </div>
                                             </div>
@@ -66,7 +69,7 @@
                                     <div class="col-lg-12">
                                         <h5>Blog Description<span class="text-danger">*</span></h5>
                                         <div class="form-group">
-                                            <textarea name="description" required id="blog"></textarea>
+                                            <textarea name="description" required id="blogEdit">{{$blogs->description}}</textarea>
                                             <label>Blog Description<span class="text-danger">*</span></label>
                                             <span class="focus-border"></span>
                                         </div>
@@ -76,7 +79,7 @@
                                         <div class="rbt-modern-select bg-transparent height-45 w-100">
                                             <select required name="tags[]" class="w-100" data-live-search="true" title="Select Tags" multiple data-size="7" data-actions-box="true" data-selected-text-format="count > 5">
                                                 @foreach($blogTags as $data)
-                                                    <option value="{{$data->id}}">{{$data->name}}</option>
+                                                    <option value="{{$data->id}}" {{ in_array($data->id, $tag_id) ? 'selected' : '' }}>{{$data->name}}</option>
                                                 @endforeach
                                             </select>
                                         </div>
@@ -101,9 +104,20 @@
     </div>
 @endsection
 @push('script')
+{{--    <script src="https://cdn.ckeditor.com/ckeditor5/38.0.1/classic/ckeditor.js"></script>--}}
+{{--    <script>--}}
+{{--        ClassicEditor--}}
+{{--            .create( document.querySelector( '#blogEdit' ),{--}}
+{{--                plugins: [ Base64UploadAdapter, /* ... */ ],--}}
+{{--                toolbar: [ /* ... */ ]--}}
+{{--            } )--}}
+{{--            .catch( error => {--}}
+{{--                console.error( error );--}}
+{{--            } );--}}
+{{--    </script>--}}
     <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
     <script>
-        var editor = new FroalaEditor('#blog');
+        var editor = new FroalaEditor('#blogEdit');
     </script>
     <script>
         const imageInput = document.getElementById('image_input');

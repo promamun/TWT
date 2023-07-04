@@ -10,7 +10,7 @@
                     <ul class="dashboard-mainmenu rbt-default-sidebar-list">
                         <li><a href="{{url('/twt/dashboard')}}"><i class="feather-info"></i><span>Dashboard</span></a></li>
                         <li><a href="{{url('/profile')}}"><i class="feather-user"></i><span>My Profile</span></a></li>
-                        <li><a href="{{url('/twt/courses/manage')}}"><i class="feather-book-open"></i><span>My Courses</span></a></li>
+                        <li><a href="{{url('/twt/course/manage')}}"><i class="feather-book-open"></i><span>My Courses</span></a></li>
                         <li><a href="{{url('/wishlist')}}"><i class="feather-bookmark"></i><span>Wishlist</span></a></li>
                         <li><a href="{{url('/reviews')}}"><i class="feather-star"></i><span>Reviews</span></a></li>
                         <li><a href="{{url('/order-history')}}"><i class="feather-shopping-bag"></i><span>Order History</span></a></li>
